@@ -1,0 +1,21 @@
+@import "../../styles/index.scss";
+
+
+.footer {
+    background-color: $black;
+    height: 13rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+
+    img {
+        margin-top: 4rem;
+    }
+    
+    p {
+        color: $white;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+}

@@ -1,0 +1,34 @@
+@import "../../styles/index.scss";
+
+.error__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.error__title {
+    text-align: center;
+    color: $red;
+    font-weight: 700;
+    font-size: 18rem;
+    margin: 4rem;
+}
+
+.error__txt {
+    text-align: center;
+    color: $red;
+    font-weight: 500;
+    font-size: 2.25rem;
+    margin: 2rem;
+}
+
+.error__txt {
+    text-align: center;
+    margin: 6.6rem 0 0 0;
+}
+
+.error__redirection {
+    text-align: center;
+    font-size: 1.125rem;
+    text-decoration: underline;
+    margin: 8.8rem;
+}
