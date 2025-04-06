@@ -1,5 +1,15 @@
+import React from "react";
+import "./Accomodation.scss";
+import Header from "../../components/Header/Header";
+import Footer from "../../components/Footer/Footer";
+
 const Accomodation = () => {
-    return <h1>Logements - Kasa</h1>;
+    return (    
+    <div>
+    <Header />
+    <Footer />
+    </div>
+    )
   };
   
   export default Accomodation;
