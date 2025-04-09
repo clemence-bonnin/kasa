@@ -11,7 +11,7 @@ const Collapse = ({ title, content }) => {
   };
 
   return (
-    <li className="collapse">
+    <div className="collapse__container">
       <div className="collapse__top">
         <div className="collapse__title">{title}</div>
         <img
@@ -22,13 +22,21 @@ const Collapse = ({ title, content }) => {
         />
       </div>
 
-      {isOpen && (
-        <div className="collapse__content">
-          {content}
-        </div>
-      )}
-    </li>
+      <div className={`collapse__content ${isOpen ? "open" : ""}`}>
+        {Array.isArray(content) ? (
+          <ul>
+            {content.map((item, index) => (
+              <li key={index}>{item}</li>
+            ))}
+          </ul>
+        ) : (
+          <p>{content}</p>
+        )}
+      </div>
+    </div>
   );
 };
 
 export default Collapse;
+
+

@@ -1,0 +1,26 @@
+@import "../../styles/index.scss";
+
+.tag__container {
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+    list-style-type: none;
+    margin-top: 1.25rem;
+}
+
+.tag__item {
+    height: 1.563rem;
+    background-color: $color-primary;
+    border-radius: 0.625rem;
+    color: $color-background;
+    font-size: 0.875rem;
+    font-weight: 600;
+    padding: 0.313rem 1.25rem;
+
+    @media (max-width: 1023px) {
+        height: 1.125rem;
+        border-radius: 0.313rem;
+        font-size: 0.625rem;
+        padding: 0.156rem 0.625rem;
+    }
+}

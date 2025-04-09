@@ -3,14 +3,29 @@
 .gallery {
     display: flex;
     justify-content: center;
-    justify-content: space-evenly;
     flex-wrap: wrap;
-    background-color: $dark;
+    background-color: $color-tertiary;
     width: 77.5rem;
     border-radius: 1.563rem;
     margin: 43px auto 43px auto;
     padding: 3.125rem;
-    gap: 50px;
+    gap: 3.125rem;
+
+    @media (min-width: 1024px) and (max-width: 1439px) {
+        width: 95%;
+        gap: 4.375rem;
+        padding: 1.25rem; 
+    }
+
+    @media (max-width: 1023px) {
+        background-color: $color-background;
+        width: 100%; 
+        gap: 1.25rem;
+        margin: 0;
+        padding-top: 1.375rem;
+        padding-bottom: 1.375rem;
+        padding: 1.25rem;
+    }
 }
 
 .card {
@@ -20,26 +35,28 @@
     border-radius: 0.625rem;
     cursor: pointer;
 
+    @media (max-width: 1023px) {
+        width: 100%;  
+    }
+
     .card__image {
         object-fit: cover;
         height: 21.25rem;
         width: 21.25rem;
         border-radius: 0.625rem;
-    }
 
-    // .linear-gradient {
-    //     position: absolute;
-    //     opacity: 35%;
-    // }
+        @media (max-width: 1023px) {
+            width: 100%; 
+        }
+    }
 
     .card__title {
         position: absolute;
-        color: white;
+        color: $color-background;
         font-weight: 700;
-        font-size: 18px;
-        z-index: 2;
         bottom: 20px;
         left: 20px;
         right: 100px;
     }
 }
+

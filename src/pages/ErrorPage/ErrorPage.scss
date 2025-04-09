@@ -7,28 +7,38 @@
 
 .error__title {
     text-align: center;
-    color: $red;
+    color: $color-primary;
     font-weight: 700;
     font-size: 18rem;
-    margin: 4rem;
+    margin: 2rem 4rem 2rem 4rem;
+    @media (max-width: 1023px) {
+        font-size: 6rem;
+        margin: 4rem 4rem 2rem 4rem;
+    }
 }
 
 .error__txt {
     text-align: center;
-    color: $red;
+    color: $color-primary;
     font-weight: 500;
     font-size: 2.25rem;
-    margin: 2rem;
-}
-
-.error__txt {
-    text-align: center;
-    margin: 6.6rem 0 0 0;
+    margin: 5rem 0 0 0;
+    @media (max-width: 1023px) {
+        font-size: 1.125rem;
+        margin: 5rem 2rem 0 2rem;
+    }
 }
 
 .error__redirection {
+    color: $color-secondary;
     text-align: center;
     font-size: 1.125rem;
     text-decoration: underline;
-    margin: 8.8rem;
+    margin: 8.8rem 0 8.8rem 0;
+    @media (max-width: 1023px) {
+        font-size: 0.875rem;
+        margin: 6rem 0 6rem 0;
+    }
 }
+
+

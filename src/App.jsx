@@ -9,16 +9,18 @@ import Accomodation from "./pages/Accomodation/Accomodation";
 
 const Router = () => {
   return (
+    <>
     <HashRouter>
+    <Header />
       <Routes>
-        <Route element={<Header />} />
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/accomodation/:id" element={<Accomodation />} />
         <Route path="*" element={<ErrorPage />} />
-        <Route element={<Footer />} />
       </Routes>
     </HashRouter>
+    <Footer />
+    </>
   );
 };
 

@@ -1,0 +1,71 @@
+@import "../../styles/index.scss";
+
+.main-container {
+    align-items: center;
+    width: 1240px;  
+    margin: 0 auto; 
+
+    @media (min-width: 1024px) and (max-width: 1439px) {
+        width: 95%;
+        padding: 1.25rem; 
+    }
+
+    @media (max-width: 1023px) {
+        width: 100%;
+    }
+}
+
+.collapse-section {
+    display: flex;
+    gap: 4%;
+
+    @media (max-width: 1023px) {
+        display: block;
+        font-size: 0.75rem;
+    }
+}
+
+.information-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    @media (max-width: 1023px) {
+        padding: 0 1.25rem 0 1.25rem;
+        display: block;
+    }
+}
+
+.left-information-section {
+    display: flex;
+    flex-direction: column;
+    @media (max-width: 1023px) {
+        display: block;
+    }
+}
+
+.right-information-section {
+    display: flex;
+    flex-direction: column;
+
+    @media (max-width: 1023px) {
+        align-items: center;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        padding: 1rem 0 1rem 0;
+    }
+
+}
+
+.logement__title {
+    @media (max-width: 1023px) {
+        padding: 0 0 0.313rem 0;
+        font-size: 1.125rem;
+    }
+}
+
+.logement__location {
+    @media (max-width: 1023px) {
+        font-size: 0.875rem;
+    }
+}

@@ -1,44 +1,129 @@
 @import "../../styles/index.scss";
 
-.collapse {
-    display: flex;
-    flex-direction: column;
-    margin: 1.8rem;
-    align-items: center;
+
+.collapse__container {
+  display: flex;
+  flex-direction: column;
+  margin: 1.8rem 0 1.8rem 0;
+  width: 60%;
+  position: relative;
+
+  @media (min-width: 1024px) and (max-width: 1439px) {
+    width: 100%;
+    padding: 0 1.25rem 0 1.25rem;
+  }
+
+  @media (max-width: 1023px) {
+    width: 100%;
+    padding: 0 1.25rem 0 1.25rem;
+    margin: 0 0 1.25rem 0;
+  }
 }
 
 .collapse__top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: $red;
-    max-width: 64rem;
-    width: 100%;
-    max-height: 3.25rem;
-    height: 100%;
-    border-radius: 0.3rem;
-    padding: 0.625rem 1.25rem 0.625rem 0.9rem;
-    cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 3.375rem;
+  width: 100%;
+  background: $color-primary;
+  padding: 0.625rem 1.25rem 0.625rem 0.9rem;
+  border-radius: 0.3rem;
+  position: relative;
+
+  @media (max-width: 1023px) {
+    height: 1.875rem;
+  }
 }
 
 .collapse__title {
-    color: $white;
-    font-weight: 600;
-    font-size: 1.5rem;
+  color: $color-background;
+  font-weight: 600;
+
+  @media (max-width: 1023px) {
+    font-size: 0.813rem;;
+  }
 }
 
 .collapse__chevron {
-    transition: transform 0.5s ease;
+  cursor: pointer;
+  transition: transform 0.5s ease;
+
+  @media (max-width: 1023px) {
+    width: 1rem;
+  }
 }
 
 .collapse__chevron.rotated {
-    transform: rotate(-180deg);
+  transform: rotate(-180deg);
 }
 
-.collapse__content{
-    background-color: $dark;
-    width: 64rem;
-    border-radius: 0 0 0.313rem 0.313rem;
-    padding: 1.25rem;
-    font-size: 1.125rem;    
+.collapse__content {
+  background-color: $color-tertiary;
+  border-radius: 0 0 0.313rem 0.313rem;
+  opacity: 0;
+  max-height: 0;
+  padding: 0 1.25rem;
+  margin-bottom: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, opacity 0.4s ease, padding 0.4s ease;
+
+  p {
+    font-size: 1.125rem;
+    transition: font-size 0.4s ease;
+
+    @media (max-width: 1023px) {
+      font-size: 0.75rem;
+    }
+  }
+
+  ul {
+    list-style-type: none;
+
+    li {
+      font-size: 1.125rem;
+      transition: font-size 0.4s ease;
+
+      @media (max-width: 1023px) {
+        font-size: 0.75rem;
+      }
+    }
+  }
+}
+
+.collapse__content.open {
+  opacity: 1;  
+  max-height: 500px; 
+  padding: 1.25rem; 
+  margin-bottom: 1rem; 
+  @media (max-width: 1023px) {
+    font-size: 0.75rem;
+  }
+}
+
+.page-about {
+  .collapse__container {
+    width: 85%;
+    margin: 2rem 6.781rem 2rem 6.781rem;
+
+    @media (min-width: 1024px) and (max-width: 1439px) {
+      width: 100%;
+      padding: 0 1.25rem 0 1.25rem;
+      margin: 1.25rem 0 1.25rem 0;
+    }
+
+    @media (max-width: 1023px) {
+      width: 100%;
+      padding: 0 1.25rem 0 1.25rem;
+      margin: 1.25rem 0 1.25rem 0;
+    }
+
+  }
+  .collapse__title {
+    font-size: 1.5rem;
+    
+    @media (max-width: 1023px) {
+      font-size: 0.813rem;;
+    }
+  }
 }

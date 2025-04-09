@@ -1,0 +1,32 @@
+@import "../../styles/index.scss";
+
+.host__container {
+    display: flex;
+    flex-direction: column;
+}
+  
+.host__item {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 0.625rem;
+    justify-content: end;
+}
+
+.host__picture {
+    border-radius: 50%;
+    width: 4rem;
+    @media (max-width: 1023px) {
+        width: 2rem;
+    }
+}
+  
+.host__name {
+    color: $color-primary;
+    text-align: end;
+    width: 5.813rem;
+    @media (max-width: 1023px) {
+        font-size: 0.75rem;
+        width: 3.125rem;
+    }
+}
