@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
-import arrowLeft from "/Users/admin/Documents/Openclassrooms/my-kasa-app/src/assets/left-arrow.svg";
-import arrowRight from "/Users/admin/Documents/Openclassrooms/my-kasa-app/src/assets/right-arrow.svg";
+import arrowLeft from "../../assets/left-arrow.svg";
+import arrowRight from "../../assets/right-arrow.svg";
 import "./Carousel.scss";
 
 function Carousel({ pictures }) {

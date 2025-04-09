@@ -1,6 +1,6 @@
 import React from 'react';
-import redstar from "/Users/admin/Documents/Openclassrooms/my-kasa-app/src/assets/star-icon-red.svg"
-import greystar from "/Users/admin/Documents/Openclassrooms/my-kasa-app/src/assets/star-icon-grey.svg"
+import redstar from "../../assets/star-icon-red.svg"
+import greystar from "../../assets/star-icon-grey.svg"
 import './Rating.scss'
 
 const Rating = ({ rating }) => {

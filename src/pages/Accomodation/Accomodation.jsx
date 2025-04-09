@@ -1,7 +1,7 @@
 import React from "react";
 import { useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom"; 
-import logements from "/Users/admin/Documents/Openclassrooms/my-kasa-app/src/data/logements.json";
+import logements from "../../data/logements.json";
 import Carousel from "../../components/Carousel/Carousel";
 import Tags from "../../components/Tags/Tags";
 import Rating from "../../components/Rating/Rating";

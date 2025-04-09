@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import chevron from "/Users/admin/Documents/Openclassrooms/my-kasa-app/src/assets/chevron.svg";
+import chevron from "../../assets/chevron.svg";
 import "./Collapse.scss";
 
 const Collapse = ({ title, content }) => {
